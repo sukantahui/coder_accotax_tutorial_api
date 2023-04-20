@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\QuestionSetLevel;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Subject;
@@ -53,6 +54,13 @@ class DatabaseSeeder extends Seeder
             ['level_name' => 'easy'],
             ['level_name' => 'medium'],
             ['level_name' => 'hard'],
+
+        ]);
+
+        QuestionSetLevel::insert([
+            ['set_level_name' => 'easy'],
+            ['set_level_name' => 'medium'],
+            ['set_level_name' => 'hard'],
 
         ]);
 
