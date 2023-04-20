@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Option extends Model
 {
     use HasFactory;
+
+    // using accessor during get the value........
+    public function getIsAnswerAttribute($value)
+    {
+        if($value ==1)
+            return true;
+        else
+            return false;
+    }
+
 }

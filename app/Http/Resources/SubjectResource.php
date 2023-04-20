@@ -10,6 +10,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property mixed subject_duration
  * @property mixed subject_short_name
  * @property mixed subject_code
+ * @property mixed subject_full_name
  */
 class SubjectResource extends JsonResource
 {
@@ -26,7 +27,7 @@ class SubjectResource extends JsonResource
                 'subjectId' => $this->id,
                 'subjectCode' => $this->subject_code,
                 'subjectShortName' => $this->subject_short_name,
-                'subjectShortName' => $this->subject_short_name,
+                'subjectFullName' => $this->subject_full_name,
                 'subjectDuration' => $this->subject_duration,
                 'durationTypeId' => $this->duration_type_id,
                 'subjectDescription' => $this->subject_description
